@@ -16,7 +16,7 @@ class Doc extends HTMLElement {
   }
 
   static register(name, obj){
-    window.customElements.define(name, obj)
+      window.customElements.define(name, obj)
   }
 }
 
