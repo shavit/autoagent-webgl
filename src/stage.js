@@ -1,7 +1,7 @@
 import Doc from './document'
 import {
   Clock,
-  CubeGeometry,
+  ConeGeometry,
   Mesh,
   MeshBasicMaterial,
   PerspectiveCamera,
@@ -26,8 +26,8 @@ class Stage {
   __animate(){
     window.requestAnimationFrame(this.__animate.bind(this))
     let delta = this.clock.getDelta()
-    this.mesh.rotation.x += delta * 0.5
-    this.mesh.rotation.y += delta * 2
+    this.mesh.rotation.x += delta * 0.11
+    this.mesh.rotation.y += delta * 3
 
     this.mesh.position.x += this.direction * delta
     if (this.mesh.position.x > 2) {
@@ -46,7 +46,7 @@ class Stage {
 
     this.scene = new Scene()
 
-    let geometry = new CubeGeometry(1, 1, 1)
+    let geometry = new ConeGeometry(1, 1, 21)
     this.geometry = geometry
 
     let material = new MeshBasicMaterial({
@@ -94,7 +94,6 @@ export class StageDom extends Doc {
     }
 
     render() {
-	console.log('render')
 	this.innerHTML = null
 	this.appendChild(this.stage.render())
     }
