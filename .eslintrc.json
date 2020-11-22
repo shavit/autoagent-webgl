@@ -1,0 +1,14 @@
+{
+    "extends": ["airbnb"],
+    "overrides": [
+	{
+	    "files": [
+		"./src/**/*.js"
+	    ]
+	}
+    ],
+    "parserOptions": {
+	"ecmaVersion": 6,
+	"sourceType": "module"
+    }
+}

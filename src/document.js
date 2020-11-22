@@ -7,17 +7,17 @@ class Doc extends HTMLElement {
     console.log('connected');
   }
 
-  disconnectedCallback(){
+  disconnectedCallback() {
     console.log('disconnected');
   }
 
-  render(newHtml){
+  render(newHtml) {
     this.innerHTML = newHtml;
   }
 
-  static register(name, obj){
-      window.customElements.define(name, obj)
+  static register(name, obj) {
+    window.customElements.define(name, obj);
   }
 }
 
-export default Doc
+export default Doc;
