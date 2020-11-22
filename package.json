@@ -1,0 +1,28 @@
+{
+  "name": "autoagent-webgl",
+  "version": "1.0.0",
+  "description": "WebGL app",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.6.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "deploy": "surge dist --domain autoagent-webgl.surge.sh",
+    "dev": "webpack-dev-server --mode development --hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shavit/autoagent-webgl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shavit/autoagent-webgl/issues"
+  },
+  "homepage": "https://github.com/shavit/autoagent-webgl#readme"
+}
