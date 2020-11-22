@@ -94,6 +94,7 @@ export class StageDom extends Doc {
     }
 
     render() {
+	console.log('render')
 	this.innerHTML = null
 	this.appendChild(this.stage.render())
     }
